@@ -4,8 +4,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import web.service.CarServiceImpl;
+import web.service.CarService;
 import java.util.List;
+import web.car.Car;
 
 @Controller
 public class CarController {
@@ -18,7 +19,7 @@ public class CarController {
 //                new Car("Audi", "yellow", "444"),
 //                new Car("Mashina", "green", "555")
 //        ));
-        List<Car> carList = CarServiceImpl.getCarList(count);
+        List<Car> carList = CarService.getCarList(count);
         model.addAttribute("carsList", carList);
         return "cars";
     }
