@@ -10,7 +10,7 @@ public class CarService {
         Car c2 = new Car("BMW", "blue", "222");
         Car c3 = new Car("Volvo", "black", "333");
         Car c4 = new Car("Audi", "yellow", "444");
-        Car c5 = new Car("Mashina", "green", "555");
+        Car c5 = new Car("ЗАЗ", "green", "555");
 
         List<Car> carList = new ArrayList<>();
         switch (count) {
